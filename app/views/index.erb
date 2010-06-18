@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Chat :)</title>
+		<style type="text/css" media="screen">
+			fieldset {border:1px #333 solid;}
+			fieldset legend { padding: 5px ; font-family: verdana; font-size: 14px;}
+			
+			#chat-log {height: 300px; background: #f4f4f4; border: 1px #c3c3c3 dotted; padding: 10px; overflow-y: auto; 
+				overflow-x: hidden;}
+			#chat-log div.message { margin-bottom: 5px; border-bottom:1px #d7d7d7 solid; padding: 10px; font-size:12px; display: block;}
+			#chat-log div.message strong {font-family: arial;}
+			#chat-log div.message strong span {font-family: verdana; font-size: 15px; color:#ff4400; font-weight: lighter;}
+			#chat-log div.message p {font-family: tahoma; margin:2px 0;}
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/json.js"></script>
+		<script type="text/javascript" src="javascript/FABridge.js"></script>
+		<script type="text/javascript" src="javascript/swfobject.js"></script>
+		<script type="text/javascript" src="javascript/web_socket.js"></script>
+		<script type="text/javascript" charset="utf-8">
+				WebSocket.__swfLocation = "javascript/WebSocketMain.swf";
+		</script>
+	</head>
+	<body>
+		<fieldset>
+			<legend> Chat :) </legend>
+			<div id='chat-log'>
+			</div>
+			<div id='chat-input'>
+				<form action="javascript:;" method="get" accept-charset="utf-8">
+					<p><label for="nick">Nome</label>
+					<input type="text" name="apelido" value="Guest<%=rand(1000.2000)%>" id="nick" /></p>
+					<p><textarea id="mensagem" name="mensagem" rows="8" cols="40"></textarea></p>
+					<p><input type="submit" value="Enviar &rarr;"></p>
+				</form>
+			</div>
+		</fieldset>
+	</body>
+	<script type="text/javascript" src="javascript/chat.js"></script>
+</html>

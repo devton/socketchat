@@ -1,0 +1,105 @@
+--- 
+dependencies: 
+  ZenTest: 
+    group: 
+    - :test
+    version: = 4.3.1
+  usher: 
+    group: 
+    - :default
+    version: = 0.6.0
+  autotest: 
+    group: 
+    - :test
+    version: = 4.2.9
+  autotest-notification: 
+    group: 
+    - :test
+    version: = 2.2.1
+  rspec: 
+    group: 
+    - :test
+    version: = 1.3.0
+  thin: 
+    group: 
+    - :default
+    version: ">= 0"
+  activemodel: 
+    group: 
+    - :default
+    version: = 3.0.0.beta3
+  erubis: 
+    group: 
+    - :default
+    version: = 2.6.5
+  arel: 
+    group: 
+    - :default
+    version: ">= 0"
+  cucumber: 
+    group: 
+    - :test
+    version: = 0.7.0.beta.7
+  cramp: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- ZenTest: 
+    version: 4.3.1
+- abstract: 
+    version: 1.0.0
+- builder: 
+    version: 2.1.2
+- i18n: 
+    version: 0.3.7
+- memcache-client: 
+    version: 1.8.3
+- tzinfo: 
+    version: 0.3.22
+- activesupport: 
+    version: 3.0.0.beta3
+- activemodel: 
+    version: 3.0.0.beta3
+- arel: 
+    version: 0.3.3
+- autotest: 
+    version: 4.2.9
+- autotest-notification: 
+    version: 2.2.1
+- eventmachine: 
+    version: 0.12.10
+- mysqlplus: 
+    version: 0.1.2
+- rack: 
+    version: 1.1.0
+- cramp: 
+    version: "0.11"
+- diff-lcs: 
+    version: 1.1.2
+- trollop: 
+    version: 1.16.2
+- gherkin: 
+    version: 2.0.2
+- json_pure: 
+    version: 1.4.3
+- term-ansicolor: 
+    version: 1.0.5
+- cucumber: 
+    version: 0.7.0.beta.7
+- daemons: 
+    version: 1.0.10
+- erubis: 
+    version: 2.6.5
+- fuzzyhash: 
+    version: 0.0.11
+- rspec: 
+    version: 1.3.0
+- thin: 
+    version: 1.2.7
+- usher: 
+    version: 0.6.0
+hash: c48ee08753a3f9bdd3a262f2ce795a8feaacd5e4
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org

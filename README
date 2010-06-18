@@ -1,0 +1,14 @@
+:) - Chat feito em CRAMP + WebSocket
+
+Primeiro rode o serviço para distribuir as flshpolicyd
+
+$ cd extra 
+$ source policyd
+
+Depois numa outra aba
+
+$ bundle install
+$ ruby chat.rb
+
+Depois http://localhost:8080
+
