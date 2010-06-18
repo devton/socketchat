@@ -1,7 +1,9 @@
 module Routes
   class App
-    def self.define 
+    def self.build 
       Rack::Builder.new do
+        use Rack::Session::Cookie
+        
         routes = Usher::Interface.for(:rack) do
           add('/').to(ChatController)
           add('/background').to(SocketController)

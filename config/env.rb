@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'bundler'
+require 'thin'
+require 'usher'
+require 'erubis'
 require 'cramp/controller'
 require 'cramp/model'
-require 'erubis'
-require 'usher'
 require 'active_support/all'
 require 'active_support/json'
 

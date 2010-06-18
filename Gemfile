@@ -5,7 +5,7 @@ gem 'arel'
 gem 'thin'
 gem 'activemodel', '3.0.0.beta3'
 gem 'erubis', '2.6.5'
-gem 'usher', "0.6.0"
+gem 'usher' , "0.6.0"
 
 group :test do
   gem "rspec", "1.3.0"
