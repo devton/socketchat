@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler'
 require 'thin'
-require 'usher'
+require 'http_router'
 require 'erubis'
 require 'cramp/controller'
 require 'cramp/model'

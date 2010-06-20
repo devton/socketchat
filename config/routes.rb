@@ -4,7 +4,7 @@ module Routes
       Rack::Builder.new do
         use Rack::Session::Cookie
         
-        routes = Usher::Interface.for(:rack) do
+        routes = HttpRouter.new do
           add('/').to(ChatController)
           add('/background').to(SocketController)
         end
