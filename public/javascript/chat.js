@@ -8,6 +8,9 @@ $(document).ready(function(){
 		$('#chat-log').append('<div>ligando chat para '+name+'.</div>')
 	};
 	
+	wsocket.onclose = function() {
+		$('#chat-log').append('<div>CABOU A BRINCADEIRA! :O</div>')		
+	};
 	wsocket.onmessage = function (e){
 		var data = JSONstring.toObject(e.data);
 			
